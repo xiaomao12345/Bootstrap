@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="lib/css/bootstrap.css" rel="stylesheet"/>
+		<title>内容-图片</title>
+		<style>
+			img{
+				width: 200px;
+				height: 350px;
+			}
+		</style>
+	</head>
+	<body style="padding: 100px;">
+		<img src="img/timg.jpeg" alt="" class="img-thumbnail float-left"/>
+		<img src="img/timg.jpeg" alt="" class="img-fluid float-right"/>
+		<br>
+		<br>
+		<br>
+		<br>
+		<picture>
+		    <source srcset="img/0.jpg"  media="(min-width: 1000px)" >
+		    <source srcset="img/1.jpg"  media="(min-width: 800px)">
+		    <source srcset="img/10.jpg"  media="(min-width: 500px)">
+		    <img srcset="img/100.jpg" alt="这是当浏览器不支持picture标签时显示的图片">
+		</picture>
+		<script src="lib/jquery/jquery.js"></script>
+		<script src="lib/js/bootstrap.bundle.js"></script>
+        <script src="lib/js/bootstrap.js"></script>
+	</body>
+</html>

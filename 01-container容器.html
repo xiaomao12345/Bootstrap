@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!--样式-->
+		<link href="lib/css/bootstrap.css" rel="stylesheet" />
+		<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+		<title>BootStrap</title>
+		<style>
+			/*超小屏幕*/
+			@media (max-width: 575px) {
+				.contain-self{
+					width: 100%;
+					background-color: red;
+				}
+			}
+			/*小屏幕*/
+			@media (min-width: 576px) and (max-width: 767px) {
+				.contain-self{
+					width: 540px;
+					background-color: green;
+				}
+			}
+			/*中等屏幕*/
+			@media (min-width: 768px) and (max-width: 991px) {
+				.contain-self{
+					width: 720px;
+					background-color: blue;
+				}
+			}
+			/*大屏幕*/
+			@media (min-width: 992px) and (max-width: 1199px) {
+				.contain-self{
+					width: 960px;
+					background-color: purple;
+				}
+			}
+			/*超大屏幕*/
+			@media (min-width: 1200px){
+				.contain-self{
+					width: 1140px;
+					background-color: orange;
+				}
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="container" style="background-color: red; height: 100px;">流式容器</div>
+		<div class="container-fluid" style="background-color: red; height: 100px; margin-top: 100px; margin-bottom: 100px;">固定宽度的容器</div>
+		<div class="contain-self"style="height: 100px; margin: 0 auto;" >自定义容器</div>
+		<script src="lib/jquery/jquery.js"></script>
+		<script src="lib/js/bootstrap.js"></script>
+		<!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+	</body>
+</html>

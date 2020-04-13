@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="lib/css/bootstrap.css" rel="stylesheet"/>
+		<title>栅格系统</title>
+		<style>
+			.container{
+				height: 100px;
+				background-color: pink;
+				margin-bottom: 100px;
+			}
+			.container>div>div:nth-child(1){
+				background-color: red;
+			}
+			.container>div>div:nth-child(2){
+				background-color: green;
+			}
+			.container>div>div:nth-child(3){
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col">第一部分</div>
+				<div class="col">第二部分</div>
+				<div class="col">第三部分</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-3">第一部分</div>
+				<div class="col-6">第二部分</div>
+				<div class="col-3">第三部分</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-3">第一部分</div>
+				<div class="col-6">第二部分</div>
+				<div class="col-3">第三部分</div>
+			</div>
+		</div>
+		<!--小屏幕（超小屏幕没有控制）-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">第一部分</div>
+				<div class="col-sm">第二部分</div>
+				<div class="col-sm">第三部分</div>
+			</div>
+		</div>
+		<!--小屏幕（超小屏幕没有控制）-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5">第一部分</div>
+				<div class="col-sm-5">第二部分</div>
+				<div class="col-sm">第三部分</div>
+			</div>
+		</div>
+		<!--中等屏幕-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">第一部分</div>
+				<div class="col-md-4">第二部分</div>
+				<div class="col-md-4">第三部分</div>
+			</div>
+		</div>
+		<!--小屏幕5 5 2/中等屏幕4 4 4/大屏幕6 3 3-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 col-md-4 col-lg-6">第一部分</div>
+				<div class="col-sm-5 col-md-4 col-lg-3">第二部分</div>
+				<div class="col-sm-2 col-md-4 col-lg-3">第三部分</div>
+			</div>
+		</div>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/js/bootstrap.js"></script>
+	</body>
+</html>

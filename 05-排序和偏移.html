@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="lib/css/bootstrap.css" rel="stylesheet"/>
+		<title>排序和偏移</title>
+		<style>
+			.container>.row{
+				height: 200px;
+				background-color: pink;
+				margin-bottom: 100px;
+			}
+			.container>div>div:nth-child(1){
+				background-color: red;
+			}
+			.container>div>div:nth-child(2){
+				background-color: green;
+			}
+			.container>div>div:nth-child(3){
+				background-color: blue;
+			}
+			.container>div>div:nth-child(4){
+				background-color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<!--排序-->
+		<!--排序:order 1-12 没有设置order的在最开始显示-->
+		<!--order-sm/order-md/order-lg/order-xl-->
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-3">第一部分</div>
+				<div class="col-md-3 order-4">第二部分</div>
+				<div class="col-md-3 order-1">第三部分</div>
+				<div class="col-md-3 order-2">第四部分</div>
+			</div>
+		</div>
+		
+		<!--偏移-->
+		<!--offset-sm/offset-md/offset-lg/offset-xl-->
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-3 offset-md-6">第一部分</div>
+				<div class="col-md-3">第二部分</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-3">第一部分</div>
+				<div class="col-md-3 offset-md-6">第二部分</div>
+			</div>
+		</div>
+		<script src="lib/jquery/jquery.js"></script>
+        <script src="lib/js/bootstrap.js"></script>
+	</body>
+</html>
